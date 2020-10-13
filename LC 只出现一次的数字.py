@@ -1,3 +1,5 @@
+from functools import reduce
+
 import numpy as np
 class Solution(object):
     def singleNumber(self, nums):
@@ -21,7 +23,14 @@ class Solution(object):
             else:
                 return sort_num[i]
 
-a = [-336,513,-560,-481,-174,101,-997,40,-527,-784,-283,-336,513,-560,-481,-174,101,-997,40,-527,-784,-283,354]
+    def singleNumber1(self, nums):
+        '''
+        reduce函数 [1,2,3] -> 1+2 = 3 ,3+3 = 6
+        :param nums:
+        :return:
+        '''
+        return reduce(lambda x, y: x ^ y, nums)
 
-b = Solution().singleNumber(a)
+a = [1, 2, 4, 2, 1]
+b = Solution().singleNumber1(a)
 print(b)
