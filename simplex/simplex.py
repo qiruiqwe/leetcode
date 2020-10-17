@@ -1,4 +1,8 @@
 import numpy as np
+# @Time : 2020/10/18 0:13
+# @Author : 亓瑞
+# @File : simplex.py
+# @desc : simplex
 
 
 class Simplex(object):
