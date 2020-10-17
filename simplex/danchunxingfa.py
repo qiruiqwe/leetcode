@@ -23,7 +23,7 @@ def pivot():
         r = d[i][jnum]
         d[i] -= r * d[inum]
 
-# 期待下课  真是够了 40下课
+
 def solve():
     flag = True
     while flag:
@@ -42,8 +42,8 @@ def printSol():
     print("objective is %.2f" % (-d[0][-1]))
 
 
-d = np.loadtxt("data.txt", dtype=np.float)
-(bn,cn) = d.shape
+d = np.loadtxt("simplex/data.txt", dtype=np.float)
+(bn, cn) = d.shape
 s = list(range(cn-bn, cn-1))  # 基变量列表
 solve()
 printSol()
