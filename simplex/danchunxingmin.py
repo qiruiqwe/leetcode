@@ -54,6 +54,8 @@ def printSol():
     print("objective is %.2f" % objective)
 
 
+
+
 if __name__ == '__main__':
     d = np.loadtxt("data-3.1.2.txt", dtype=np.float)
     (bn, cn) = d.shape
