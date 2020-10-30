@@ -42,7 +42,7 @@ def printSol():
     print("objective is %.2f" % (-d[0][-1]))
 
 
-d = np.loadtxt("simplex/data.txt", dtype=np.float)
+d = np.loadtxt("data-3.1.2.txt", dtype=np.float)
 (bn, cn) = d.shape
 s = list(range(cn-bn, cn-1))  # 基变量列表
 solve()
