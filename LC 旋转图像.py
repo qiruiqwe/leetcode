@@ -13,7 +13,8 @@ class Solution(object):
         newMatrix = []
         for j in range(length):
             temp = []
-            for i in reversed(range(0, width)):
+            # for i in reversed(range(0, width)):
+            for i in range(width-1, -1, -1):
                 temp.append(matrix[i][j])
             newMatrix.append(temp)
         matrix = newMatrix
